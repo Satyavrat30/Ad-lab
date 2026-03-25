@@ -29,39 +29,49 @@ An interactive web application built with Streamlit that analyzes product review
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the repository
+
 ```bash
 git clone <your-repo-url>
 cd <your-repo-folder>
-2. Install Dependencies
+```
+
+### 2. Install Dependencies
 
 Ensure you have Python installed, then run:
 
+```bash
 pip install -r requirements.txt
-3. Train the Models (Prerequisite)
+```
+
+### 3. Train the Models (Prerequisite)
 
 Before running the app, you must generate the model files.
 
-Open Model_training.ipynb
-Ensure you have the dataset available
-Run all the cells in the notebook
+1. Open `Model_training.ipynb`
+2. Ensure you have the dataset available
+3. Run all the cells in the notebook
 
 This will:
+- Clean the text
+- Train the three models
+- Evaluate performance
+- Save the required `.pkl` files to your directory
 
-Clean the text
-Train the three models
-Evaluate performance
-Save the required .pkl files to your directory
-4. Run the Web App
+### 4. Run the Web App
 
-Once the .pkl files (tfidf_vectorizer.pkl, model_lr.pkl, model_nb.pkl, model_rf.pkl) are generated, start the Streamlit server:
+Once the `.pkl` files (`tfidf_vectorizer.pkl`, `model_lr.pkl`, `model_nb.pkl`, `model_rf.pkl`) are generated, start the Streamlit server:
 
+```bash
 streamlit run app.py
-💡 Usage
-Open the local Streamlit URL provided in your terminal (usually http://localhost:8501)
-Type or paste a product review into the text box
-Click "Analyze Review"
-View:
-Winning model's prediction
-Confidence percentage
-Star rating
-Comparison of all model outputs
+```
+
+## 💡 Usage
+
+1. Open the local Streamlit URL provided in your terminal (usually `http://localhost:8501`)
+2. Type or paste a product review into the text box
+3. Click **"Analyze Review"**
+4. View:
+   - Winning model's prediction
+   - Confidence percentage
+   - Star rating
+   - Comparison of all model outputs
