@@ -3,7 +3,7 @@ import joblib
 
 # 1. Load the newly saved models and vectorizer
 try:
-    vectorizer = joblib.load(r'C:\Users\KIIT0001\Downloads\Amazon review analysis\tfidf_vectorizer.pkl')
+    vectorizer = joblib.load('tfidf_vectorizer.pkl')
     rating_model = joblib.load('rating_model.pkl')
     buy_model = joblib.load('buy_model.pkl')
 except FileNotFoundError:
