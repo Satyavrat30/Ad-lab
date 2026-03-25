@@ -31,8 +31,8 @@ An interactive web application built with Streamlit that analyzes product review
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone https://github.com/Satyavrat30/Ad-lab.git
+cd Ad-lab
 ```
 
 ### 2. Install Dependencies
